@@ -19,7 +19,7 @@ if (nuemeroUsuario == numeroSecreto) {
     }else{
         mensajeElemento.innerHTML = `
         <h1 class="container__texto-azul">Lo siento</h1>
-        <h2>El número secreto es mayor a " ${nuemeroUsuario} "</h2>
+        <h2>El número secreto es mayor a ${nuemeroUsuario} "</h2>
     `;
     }
   
