@@ -11,8 +11,16 @@ if (nuemeroUsuario == numeroSecreto) {
         <h2>Descubriste el número secreto!</h2>
     `;
 } else {
-  mensajeElemento.innerHTML = `
+    if(nuemeroUsuario > numeroSecreto){
+        mensajeElemento.innerHTML = `
         <h1 class="container__texto-azul">Lo siento</h1>
-        <h2>El número secreto era ${numeroSecreto}</h2>
+        <h2>El número secreto es menor a " ${nuemeroUsuario} "</h2>
     `;
+    }else{
+        mensajeElemento.innerHTML = `
+        <h1 class="container__texto-azul">Lo siento</h1>
+        <h2>El número secreto es mayor a " ${nuemeroUsuario} "</h2>
+    `;
+    }
+  
 }
